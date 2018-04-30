@@ -1,0 +1,94 @@
+@import "flow.less";
+@import "weekly.less";
+@import "birthday.less";
+@nav-color : #409EFF;
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'PingFang SC', 'Microsoft Yahei', sans-serif; 
+}
+
+.header{
+
+    .avatar{
+        width: 40px;
+        height: auto;
+        vertical-align: middle;
+        margin-right: 10px;
+        border: 2px solid #ffffff;
+        border-radius: 40px;
+    }
+    
+    & .brand{
+      line-height: 60px;
+      vertical-align: middle;
+      font-size: 18px;
+      color:#ffffff; 
+      float: left; 
+    }
+
+    & .head-nav{
+        float: right;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        color: #ffffff;
+
+        & li{
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 60px;
+            float: right;
+            vertical-align: middle;
+
+            & a{
+                text-decoration: none;
+                color: #ffffff;
+            }
+
+            & a :hover,:active,:focus{
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+
+        & li:hover,:active,:focus{
+            background: darken(@nav-color,3%);
+        }
+    }
+
+    & .welcome{
+        float: right;
+        margin-right: 10px;
+        color: #ffffff;
+        line-height: 60px;
+    }
+}
+
+.tools-aslide{
+    width: 300px;
+    border-right: solid 1px #e6e6e6;
+
+    & .fa{
+        font-size: 20px;
+        margin-left: 2px;
+        margin-right: 7px;
+    }
+    & a{
+        font-size: 14px;
+        color: #303133;
+        text-decoration: none;
+    }
+}
+
+.main-container{
+    min-height: 700px;
+}
+
+.copyright{
+    margin: 0px;
+    text-align: center;
+    font-size: 10px;
+    color: #929292;
+}
